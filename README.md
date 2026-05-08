@@ -47,7 +47,7 @@ La aplicación permite:
 7. ##Estructura del proyecto
 
 ## 📁 Estructura del proyecto
-
+```text
 src/
 │
 ├── config/         # Configuración general (DB, variables, etc.)
@@ -57,7 +57,7 @@ src/
 ├── routes/         # Rutas de la API
 ├── services/       # Servicios reutilizables
 └── utils/          # Funciones auxiliares
-
+```
 8. ## Instalación
 
 git clone https://github.com/tuusuario/dance-app-backend.git
@@ -97,13 +97,21 @@ El sistema utiliza:
 POST /api/auth/register  
 POST /api/auth/login
 
-11. ##Futuras mejoras
+11. ## 🔐 Configuración de variables de entorno
+
+- Crear archivo `.env`
+
+- Copiar el contenido de `.env.example`
+
+- Completar las variables necesarias
+
+12. ##Futuras mejoras
     
 - Integración de pagos internacionales
 - Sistema de ratings
 - Clases en vivo
 - Análisis de movimiento con IA
 
-12. ##Autor
+13. ##Autor
 Desarrollado por: Jose Luis Chaco Flores
 Estudiante de Ingeniería de Software UNMSM
