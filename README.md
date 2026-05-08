@@ -76,17 +76,34 @@ Proyecto en desarrollo (MVP)
 - [x] Configuración de Express
 - [x] Conexión a MongoDB Atlas
 - [x] Modelo User
+- [x] Registro de usuarios
+- [x] Login con JWT
+- [x] Hash de contraseñas con bcrypt
 - [ ] Sistema de autenticación
 - [ ] Gestión de clases
 - [ ] Sistema de pagos
 
-10. ##Futuras mejoras
+9. ## Sistema de autenticación
+
+El sistema utiliza:
+
+- JWT para autenticación
+- bcrypt para encriptación de contraseñas
+- MongoDB para persistencia de usuarios 
+10. ## Endpoints disponibles
+
+### Auth
+
+POST /api/auth/register  
+POST /api/auth/login
+
+11. ##Futuras mejoras
     
 - Integración de pagos internacionales
 - Sistema de ratings
 - Clases en vivo
 - Análisis de movimiento con IA
 
-11. ##Autor
-Desarrollado por: [Tu nombre]
-Estudiante de Ingeniería de Software
+12. ##Autor
+Desarrollado por: Jose Luis Chaco Flores
+Estudiante de Ingeniería de Software UNMSM

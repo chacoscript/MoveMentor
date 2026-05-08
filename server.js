@@ -8,6 +8,7 @@
 require("dotenv").config();
 const express = require("express");
 const connectDB = require("./src/config/db");
+const authRoutes = require("./src/routes/authRoutes");
 
 const app = express();
 
@@ -16,7 +17,10 @@ const app = express();
  */
 
 app.use(express.json());
-
+/**
+ * Rutas de autenticación
+ */
+app.use("/api/auth", authRoutes);
 // conectar MongoDB
 connectDB();
 
