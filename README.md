@@ -46,16 +46,17 @@ La aplicación permite:
 
 7. ##Estructura del proyecto
 
-backend/
+## 📁 Estructura del proyecto
+
+src/
 │
-├── src/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── config/
-│   ├── middlewares/
-│   ├── services/
-│   └── utils/
+├── config/         # Configuración general (DB, variables, etc.)
+├── controllers/    # Lógica de negocio
+├── middlewares/    # Middlewares personalizados
+├── models/         # Modelos de MongoDB
+├── routes/         # Rutas de la API
+├── services/       # Servicios reutilizables
+└── utils/          # Funciones auxiliares
 
 8. ## Instalación
 
@@ -71,11 +72,13 @@ node server.js
 
 Proyecto en desarrollo (MVP)
 
-- [x] Backend base
-- [ ] Autenticación
-- [ ] Sistema de clases
-- [ ] Pagos
-- [ ] Feedback
+- [x] Estructura inicial del backend
+- [x] Configuración de Express
+- [x] Conexión a MongoDB Atlas
+- [x] Modelo User
+- [ ] Sistema de autenticación
+- [ ] Gestión de clases
+- [ ] Sistema de pagos
 
 10. ##Futuras mejoras
     
