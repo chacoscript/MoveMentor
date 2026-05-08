@@ -1,16 +1,21 @@
+require("dotenv").config();
 const express = require("express");
+const connectDB = require("./src/config/db");
+
 const app = express();
 
 app.use(express.json());
 
-// Ruta de prueba
+// conectar DB
+connectDB();
+
+// ruta prueba
 app.get("/", (req, res) => {
-  res.send("API funcionando correctamente 🚀");
+  res.send("API funcionando 🚀");
 });
 
-// Puerto
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`Servidor en http://localhost:${PORT}`);
 });
